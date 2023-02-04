@@ -2,6 +2,7 @@
 @import url(./global/global.css);
 
 /* Elementos usados em todo o site */
+@import url(./utilidades/tipografias.css);
 @import url(./utilidades/componentes.css);
 
 /* header */
@@ -9,6 +10,9 @@
 
 /* home */
 @import url(./home/introducao.css);
+
+/* bicicletas */
+@import url(./bicicletas/bicicleta-lista.css);
 
 
 
