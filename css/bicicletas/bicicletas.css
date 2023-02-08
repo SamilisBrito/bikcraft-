@@ -1,0 +1,97 @@
+/* usa-se quando todos estão em dives com esta classe */
+
+/* .bicicletas-bg:nth-child(odd) {
+    background: var(--c11);
+} */
+
+/* o pai é o main */
+/* .bicicletas-bg:nth-child(3) {
+    background: var(--c11);
+} */
+
+.bicicletas-bg {
+  background: var(--c11);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.bicicletas span {
+  background: var(--c12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+/* colocar o preço com grid */
+.bicicletas-img {
+  display: grid;
+}
+
+/* colocando a imagem na primeira linha e primeira coluna */
+.bicicletas-img img {
+  grid-area: 1/1;
+}
+
+/* colocando o span tambem na primeira linha e priemira coluna, alinhado ele no início e no fim */
+.bicicletas-img span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 2rem;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1 / -1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 2rem;
+}
+
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  margin-bottom: 8px;
+}
+
+.bicicletas p {
+  margin-bottom: 3.2rem;
+}
+
+.bicicletas a {
+  place-self: end;
+}
+
+.bicicletas li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
+/* .bicicletas li + li {
+  margin-top: 16px;
+} */
+
+.bicicletas ul {
+    display: grid;
+    gap: 16px;
+}
+
+.bicicletas-conteudo img {
+  width: 24px;
+}
