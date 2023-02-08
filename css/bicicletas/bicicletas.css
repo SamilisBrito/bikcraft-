@@ -10,7 +10,9 @@
 } */
 
 .bicicletas-bg {
-  background: var(--c11);
+  background-image: linear-gradient(to right, var(--w) 30%, var(--c11) 0);
+  /* sombra não aceita porcentagem */
+  /* box-shadow: inset 120px 0px var(--w); */
 }
 
 .bicicletas {
@@ -105,6 +107,9 @@
         gap: 2rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+    .bicicletas-bg {
+        background:  var(--c11);
     }
 }
 
