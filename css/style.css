@@ -16,9 +16,12 @@
 @import url(./home/depoimento.css);
 
 /* bicicletas */
-@import url(./bicicletas/bicicleta-lista.css);
+@import url(./bicicletas/bicicleta-lista.css); 
 @import url(./bicicletas/bicicletas.css);
+
+/* bicicleta */
 @import url(./bicicleta/bicicleta.css);
+@import url(./bicicleta/seguro.css);
 
 /* seguros */
 @import url(./seguros/seguros.css);
