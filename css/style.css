@@ -4,6 +4,7 @@
 /* Elementos usados em todo o site */
 @import url(./utilidades/tipografias.css);
 @import url(./utilidades/componentes.css);
+@import url(./utilidades/formulario.css);
 
 /* header */
 @import url(./global/header.css);
@@ -27,6 +28,10 @@
 @import url(./seguros/seguros.css);
 @import url(./seguros/vantagens.css);
 @import url(./seguros/perguntas.css);
+
+/* Contato */
+@import url(./contato/contato.css);
+@import url(./contato/lojas.css);
 
 /* termos */
 @import url(./termos/termos.css);
