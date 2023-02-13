@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  border:  1px solid var(--c10);
+  border: 1px solid var(--c10);
 }
 
 /* checked é como se fosse o focus. ele é o do radio */
@@ -90,7 +90,7 @@
   border-color: var(--c9);
 }
 
-.orcamento-produto input:focus + label{
+.orcamento-produto input:focus + label {
   box-shadow: 0 0 0 2px var(--p1);
   border-color: var(--c12);
 }
@@ -115,9 +115,9 @@
   background: var(--w);
 }
 
-/* .orcamento-conteudo {
+.orcamento-conteudo {
   display: none;
-} */
+}
 
 .orcamento-conteudo h2,
 .orcamento-dados h2:nth-of-type(n + 2) {
@@ -129,4 +129,28 @@
 #seguro:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
+}
+
+.orcamento-detalhes {
+  display: none;
+  background: var(--w);
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.orcamento-detalhes li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.orcamento-detalhes li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label + .orcamento-detalhes {
+  display: grid;
 }
