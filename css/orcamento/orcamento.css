@@ -27,21 +27,82 @@
 
 .orcamento-produto,
 .orcamento-dados {
-    padding: 60px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .orcamento-produto {
-    border-radius: 5px 0 0 5px;
-    background: var(--c12);
+  border-radius: 5px 0 0 5px;
+  background: var(--c12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
 }
 
-.orcamento-dados {
-    border-radius: 0 5px 5px 0;
-    background: var(--w);
+.orcamento-produto > * {
+  grid-column: 1 / -1;
+}
+
+.orcamento-produto > label {
+  grid-column: initial;
 }
 
 .orcamento-produto label {
-    background: #ccc;
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+  color: var(--c4);
+  background-color: var(--c10);
+  display: block;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+/* checked é como se fosse o focus. ele é o do radio */
+.orcamento-produto input:checked + label {
+    background: var(--w);
+    color: var(--c11);
+  }
+
+/* bolinha falsa de seletor */
+.orcamento-produto label::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--c6);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* a bolinha da bolinha falsa de seletor */
+.orcamento-produto input:checked + label::before {
+border-color: var(--c7);
+box-shadow: inset 0 0 0 3px var(--w), inset 0 0 0 6px var(--c7) ;
+}
+
+
+/* sumindo com a bolinha verdadeira */
+.orcamento-produto input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+.orcamento-dados {
+  border-radius: 0 5px 5px 0;
+  background: var(--w);
+}
+
+/* .orcamento-conteudo {
+    display: none;
+} */
+
+
+/* o ~ é como se fosse um monte de mais preocurando o id depos de outro id (eles tem que estar no mesmo nível no html) */
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+  display: block;
+}
