@@ -50,7 +50,7 @@
 }
 
 .contato-meios a:first-child {
-  background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+  background: url(../../img/icones/email.svg) no-repeat 0px 2px;
 }
 
 .contato-meios a:nth-child(2) {
