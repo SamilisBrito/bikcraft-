@@ -5,6 +5,7 @@
 @import url(./utilidades/tipografias.css);
 @import url(./utilidades/componentes.css);
 @import url(./utilidades/formulario.css);
+@import url(./utilidades/animacao.css);
 
 /* header */
 @import url(./global/header.css);
